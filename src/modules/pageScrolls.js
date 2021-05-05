@@ -91,3 +91,4 @@ homeToAboutBtn.addEventListener('click', () => {
 homeToContactBtn.addEventListener('click', () => {
     scrollToEl(contactSection);
 });
+
