@@ -1,0 +1,156 @@
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .home-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .home-typer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        .sentence{
+            font-size: 23px;
+            color: $light-color;
+            font-weight: bold;
+        }
+        .home-typer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .sentence-main{
+                font-size: 23px;
+                margin-left: 10px;
+                color: $red-main;
+                font-weight: bold;
+            }
+    
+            .type-bar{
+                width: 3px;
+                height: 23px;
+                background-color: $red-main;
+                margin-left: 10px;
+                animation: blink .6s linear infinite alternate;
+            }
+        }
+    }
+
+    .home-secondary{
+        font-size: 17px;
+        margin-top: 20px;
+        color: $light-color;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .home-buttons{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        .btn-lg{
+            width: 200px;
+            height: 54px;
+            border: 2px solid $light-color;
+            background-color: transparent;
+            outline: none;
+            font-size: 17px;
+            color: $light-color;
+            transition: .3s;
+            cursor: pointer;
+        
+            &:hover{
+                background-color: rgba(200,200,200, 0.5);
+            }
+        }
+        
+        
+        #home-to-about{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@keyframes blink{
+    0% {opacity: 1;}
+    60% {opacity: 0.5;}
+    100% {opacity: 0;}
+}
+
+@media screen and (min-width: 560px) {
+    .home{
+        .home-typer-container{
+            .sentence{
+                font-size: 32px;
+            }
+
+            .home-typer{
+                .sentence-main{
+                    font-size: 32px;
+                }
+
+                .type-bar{
+                    width: 5px;
+                    height: 32px;
+                }
+            }
+        }
+    
+        .home-secondary{
+            font-size: 20px;
+        }
+
+        .home-buttons{
+            .btn-lg{
+                width: 240px;
+                height: 60px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 890px){
+    .home{
+        .home-typer-container{
+            flex-direction: row;
+        
+            .sentence{
+                font-size: 45px;
+            }
+
+            .home-typer{
+                .sentence-main{
+                    font-size: 45px;
+                }
+
+                .type-bar{
+                    width: 6px;
+                    height: 45px;
+                }
+            }
+        }
+    
+        .home-buttons{
+            margin-top: 20px;
+            flex-direction: row;
+        
+            #home-to-about{
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+        }
+    }
+}

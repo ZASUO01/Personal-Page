@@ -1,0 +1,239 @@
+.contact{
+    width: 100%;
+    //padding: 100px 50px;
+    padding: 70px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .contact-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        //justify-content: space-between;
+        justify-content: center;
+        flex-direction: column;
+        //padding: 60px 0;
+        padding: 35px 0;
+
+
+        .contact-message{
+            width: 95%;
+            //width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p{
+                //font-size: 19px ;
+                font-size: 16px;
+                color: $blue-color-2;
+                width: 100%;
+                max-width: 400px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .message-form{
+                width: 100%;
+                max-width: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 20px 0;
+
+                .form-input{
+                    width: 100%;
+                    //height: 48px;
+                    height: 38px;
+                    border: 0;
+                    border-bottom: 2px solid $gray-color;
+                    background-color: transparent;
+                    margin-bottom: 40px;
+                    //font-size: 19px;
+                    font-size: 16px;
+                    color: $gray-color;
+                    padding-left: 10px;
+                    outline: none;
+                    transition: .3s;
+
+                }
+
+                .form-area{
+                    width: 100%;
+                    height: 120px;
+                    //height: 150px;
+                    resize: none;
+                    padding: 5px 10px;
+                    background-color: transparent;
+                    border:  2px solid $gray-color;
+                    outline: none;
+                    margin-bottom: 40px;
+                    font-size: 16px;
+                    //font-size: 19px;
+                    color: $gray-color;
+                }
+            }
+        }
+    }
+
+    .contact-social{
+        margin-top: 60px;
+        //margin-top: 0;
+        //width: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p{
+            //font-size: 25px;
+            font-size: 19px;
+            color: $blue-color-2;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .contact-social-media{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            .social-links{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+    
+                a{
+                    //font-size: 90px;
+                    font-size: 60px;
+                    margin: 0 20px;
+                    color: $gray-color;
+                    transition: .3s;
+    
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            .curriculum{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 20px;
+                margin-top: 60px;
+                
+
+                a{
+                    width: 250px;
+                    height: 54px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid $gray-color;
+                    color: $gray-color;
+                    font-size: 20px;
+                    transition: .3s;
+                    text-decoration: none;
+
+                    &:hover{
+                        background-color: rgba(120,120,120, 0.5);
+                    }
+
+                    span{
+                        font-size: 17px;
+                        color: $gray-color;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen  and (min-width:560px){
+    .contact{
+        padding: 70px 50px;
+        
+        .contact-container{
+            .contact-message{
+                p{
+                    font-size: 19px;
+                }
+    
+                .message-form{
+                    .form-input{
+                        width: 100%;
+                        height: 48px;
+                        font-size: 19px;
+                    }
+    
+                    .form-area{
+                        width: 100%;
+                        height: 150px;
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    
+        .contact-social{
+            .contact-social-media{
+                .social-links{
+                    a{
+                        font-size: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen  and (min-width:960px){
+    .contact{
+        padding: 100px 50px;
+        
+        .contact-container{
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+            padding: 60px 0;
+    
+            .contact-message{
+                width: 50%;
+            }
+        }
+    
+        .contact-social{
+            margin-top: 0;
+            width: 50%;
+           
+            p{
+                font-size: 25px;
+            }
+    
+            .contact-social-media{
+                .social-links{
+        
+                    a{
+                        font-size: 90px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
